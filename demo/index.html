@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>EasyOpenLayers demo</title>
+</head>
+<body>
+    <h1>EasyOpenLayers demo page</h1>
+    <div id="map"
+        style="width:600px; height:500px; border: 1px solid black;"
+        data-filter-category=""
+        data-filter-subcategory=""
+        data-filter-map-source=""
+        data-filter-keywords=""
+        data-initial-lon="-3.86"
+        data-initial-lat="40.38"
+        data-initial-zoom="6"
+        data-map-bounds-left="-20037508.34"
+        data-map-bounds-right="20037508.34"
+        data-map-bounds-top="20037508.34"
+        data-map-bounds-bottom="-20037508.34"
+        data-api-url="/entities-text/">
+    </div>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="lib/openlayers/OpenLayers.js"></script>
+    <script src="../lib/easy-openlayers.js"></script>
+    <script>
+        var mapView = new EasyOpenLayers.MapView({el: $('#map')});
+    </script>
+</body>
+
